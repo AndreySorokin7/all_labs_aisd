@@ -1,6 +1,3 @@
-#ifndef _MY_VECTOR_
-#define _MY_VECTOR_
-
 #include <iostream>
 
 using namespace std;
@@ -46,6 +43,3 @@ public:
 //  }
 //  return istr;
 //}
-
-
-#endif
