@@ -65,3 +65,27 @@ int TStack<T>::GetSize()
 	return size;
 }
 
+template <class T>
+int TStack<T>::GetTop()
+{
+	return top;
+}
+template <class T>
+T TStack<T>::TopView()
+{
+	return mas[top];
+}
+template <class T>
+TStack<T>& TStack<T>::operator=(const TStack<T>& a)
+{
+	if (this != &a)
+	{
+		delete[] mas;
+		top = a.top;
+		size = a.size;
+		mas = new T[size];
+		for (int i = 0; i < size; i++)
+			mas[i] = a.mas[i];
+	}
+	return *this;
+}

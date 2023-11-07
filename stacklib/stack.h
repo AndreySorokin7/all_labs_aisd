@@ -25,7 +25,23 @@ public:
     bool IsEmpty();
 
     TStack& operator=(const TStack<T>& stack);
+    
 };
+template <class T>
+ostream& operator<< (ostream& ostr, const TStack<T>& A) {
+    for (int i = 0; i < A.top; i++) {
+        ostr << A.mas[i] << "\n";
+        ostr << endl;
+    }
+    return ostr;
+}
+template <class T>
+istream& operator>> (istream& istr, const TStack<T>& A) {
+    for (int i = 0; i < A.size; i++) {
+        istr >> A.mas[i];
+    }
+    return istr;
+}
 
 
 //template <class T1>
