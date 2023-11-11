@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\vectorlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\stacklib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\queuelib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\postfixlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -59,7 +59,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\vectorlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\stacklib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\queuelib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\postfixlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -110,6 +110,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\build\gtest\gtest.vcxproj">
       <Project>{D76EC55F-E4E3-37ED-AB56-07A3C40124EE}</Project>
       <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\build\postfix\postfix.vcxproj">
+      <Project>{69CD6AB1-750C-343F-80C4-3113B61D3C4F}</Project>
+      <Name>postfix</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\build\postfixlib\postfixlib.vcxproj">
+      <Project>{3F86FABB-F665-317F-AE0C-1F62CBE7B20C}</Project>
+      <Name>postfixlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\build\postfixtest\postfixtest.vcxproj">
+      <Project>{65B64CA9-5537-3741-A05B-24AF365FCAD9}</Project>
+      <Name>postfixtest</Name>
     </ProjectReference>
     <ProjectReference Include="C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\build\queue\queue.vcxproj">
       <Project>{14134A15-05E9-3868-BC9D-A242FFBC028B}</Project>

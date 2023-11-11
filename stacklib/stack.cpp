@@ -1,33 +1,39 @@
+#pragma once
 #include <math.h>
 
 #include "stack.h"
 template <class T>
 void TStack<T>:: Push (T a) {
 	if (IsFull())throw "StackFull";
-	this.mas[top] = a;
-	this.top++;
+	this->mas[top] = a;
+	top++;
 }
 template <class T>
 T TStack<T>::Get() {
 	if (IsEmpty())throw "StackEmpty";
-	this.top--;
-	return this.mas[top];
+	top--;
+	return mas[top];
 }
 template <class T>
-TStack<T>::TStack(int n = 0) {
+TStack<T>::TStack(int n = 1) {
 	if (n < 0)
-		throw MyException("Error size");
+		throw "Error size" ;
 	else
 		if (n == 0) {
-			this.size = 0;
-			mas = 0;
-			this->top = 0;
+			size = 0;
+			top = 0;
 		}
 		else {
-			this.size = n;
-			T* mas = new T[this.size];
-			this->top = 0;
+			size = n;
+			mas = new T[n];
+			top = 0;
 		}
+}
+template <class T>
+void TStack<T>::printstack()
+{
+	for (int i = top - 1; i >= 0; i--)
+		cout << " " << mas[i];
 }
 template <class T>
 TStack<T>::TStack(TStack<T>& stack) {
@@ -39,8 +45,8 @@ TStack<T>::TStack(TStack<T>& stack) {
 }
 template <class T>
 TStack<T> :: ~TStack() {
-	if (mas!= 0)
-		delete[] mas;
+	
+	delete[] mas;
 
 	top = 0;
 	size = 0;
@@ -55,7 +61,7 @@ bool TStack<T>::IsEmpty() {
 //проверка на пустоту
 template <class T>
 bool TStack<T>::IsFull() {
-	return (top >= leng);
+	return (top >= size);
 }
 
 

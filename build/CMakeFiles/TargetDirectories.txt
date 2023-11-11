@@ -7,3 +7,6 @@ C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/stack
 C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/queue/CMakeFiles/queue.dir
 C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/queuelib/CMakeFiles/queuelib.dir
 C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/queuetest/CMakeFiles/queuetest.dir
+C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/postfix/CMakeFiles/postfix.dir
+C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/postfixlib/CMakeFiles/postfixlib.dir
+C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/postfixtest/CMakeFiles/postfixtest.dir

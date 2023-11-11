@@ -56,7 +56,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\vectorlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\stacklib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\queuelib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\postfixlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -73,10 +73,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\vectorlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\stacklib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\queuelib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\postfixlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\vectorlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\stacklib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\queuelib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\postfixlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -99,7 +99,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\vectorlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\stacklib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\queuelib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\postfixlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -116,10 +116,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\vectorlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\stacklib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\queuelib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\postfixlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\vectorlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\gtest;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\stacklib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\queuelib;C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\postfixlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -172,7 +172,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\stack\main.cpp" />
+    <ClCompile Include="C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\stack\main_stack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\andre\OneDrive\Рабочий стол\proekt\all_labs_aisd\build\ZERO_CHECK.vcxproj">

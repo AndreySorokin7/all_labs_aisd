@@ -1,3 +1,6 @@
+#pragma once
+
+
 #include <iostream>
 
 using namespace std;
@@ -8,10 +11,9 @@ protected:
     int top;
     T* mas;
 public:
-    TStack(int n = 0);
+    TStack(int n = 1);
     TStack(TStack<T>& stack);
     ~TStack();
-
     void Push(T a);
     T Get();
     T TopView();
@@ -23,9 +25,11 @@ public:
 
     bool IsFull();
     bool IsEmpty();
+    void printstack();
 
     TStack& operator=(const TStack<T>& stack);
-    
+    friend ostream& operator<< (ostream& ostr, const TStack<T>& A);
+    friend istream& operator>> (istream& istr, TStack<T>& A);
 };
 template <class T>
 ostream& operator<< (ostream& ostr, const TStack<T>& A) {
@@ -36,7 +40,7 @@ ostream& operator<< (ostream& ostr, const TStack<T>& A) {
     return ostr;
 }
 template <class T>
-istream& operator>> (istream& istr, const TStack<T>& A) {
+istream& operator>> (istream& istr, TStack<T>& A) {
     for (int i = 0; i < A.size; i++) {
         istr >> A.mas[i];
     }
@@ -59,3 +63,4 @@ istream& operator>> (istream& istr, const TStack<T>& A) {
 //  }
 //  return istr;
 //}
+

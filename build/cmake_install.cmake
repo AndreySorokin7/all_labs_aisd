@@ -41,6 +41,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/queue/cmake_install.cmake")
   include("C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/queuelib/cmake_install.cmake")
   include("C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/queuetest/cmake_install.cmake")
+  include("C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/postfix/cmake_install.cmake")
+  include("C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/postfixlib/cmake_install.cmake")
+  include("C:/Users/andre/OneDrive/Рабочий стол/proekt/all_labs_aisd/build/postfixtest/cmake_install.cmake")
 
 endif()
 
