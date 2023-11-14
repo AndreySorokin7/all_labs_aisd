@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 2.8) #Проверка версии CMake.
 set(PROJECT_NAME all_labs_aisd) #Создаем обычную локальную переменную с именем проекта
 project(${PROJECT_NAME}) # Название проекта
 
+
 set(stack stack) #Переменная с именем приложения
 set(stacklib stackib) #Переменная с именем библиотеки
 set(stacktest stacktest)
@@ -12,6 +13,7 @@ set(queuetest queuetest)
 set(postfix postfix) #Переменная с именем приложения
 set(postfixlib postfixlib) #Переменная с именем библиотеки
 set(postfixtest postfixtest)
+set(Calc_by_postfix Calc_by_postfix)
 
 set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "Configs" FORCE) #Создается переменная CMAKE_CONFIGURATION_TYPES со значением "Debug;Release" и меткой/разделом Configs, переменная сохраниется в специальном файле доступном из всех файлов,
 if(NOT CMAKE_BUILD_TYPE) # проверка имеющихся у компилятора вариантов сборки
@@ -33,8 +35,7 @@ add_subdirectory(queuetest)
 add_subdirectory(postfix) #Добавляем директорию с под-CMakeList-ом, и выполняем под-CMakeList
 add_subdirectory(postfixlib)
 add_subdirectory(postfixtest)
-
-
+add_subdirectory(Calc_by_postfix)
 
 #file(GLOB hdrs "*.h*") #Добавляем в переменную hdrs все файлы с расширением .h
 #file(GLOB srcs "*.cpp") #Добавляем в переменную srcs все файлы с расширением .cpp
