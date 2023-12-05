@@ -6,7 +6,7 @@
 using namespace std;
 
 template <class T>
-class TQueue : {
+class TQueue  {
 protected:
 	int size;
 	int ind;
@@ -25,7 +25,19 @@ public:
 	bool IsFull();
 	bool IsEmpty();
 
-	//операторы вводы и выводы
+	friend std::ostream& operator<<(std::ostream& os, const TQueue<T>& q) {
+		for (int i = q.start, j = 0; j < q.count; ++j, i = (i + 1) % q.size) {
+			os << q.mas[i] << " ";
+		}
+		return os;
+	}
+
+	friend std::istream& operator>>(std::istream& is, TQueue<T>& q) {
+		for (int i = 0; i < q.size; i++) {
+			istr >> q.mas[i];
+		}
+		return istr;
+	}
 };
 
 

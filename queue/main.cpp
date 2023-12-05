@@ -3,8 +3,6 @@
 
 int main()
 {
-  TQueue<int> a(3, 3);
-
-  //std::cout<< a << "\nHi\n";
+  TQueue<int> a(3);
   return 0;
 }
