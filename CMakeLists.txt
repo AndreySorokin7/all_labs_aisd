@@ -15,6 +15,10 @@ set(postfixlib postfixlib) #Переменная с именем библиот�
 set(postfixtest postfixtest)
 set(Calc_by_postfix Calc_by_postfix)
 set(WindowForQueue WindowForQueue)
+set(polinom polinom)
+set(polinomlib polinomlib)
+set(polinomtest polinomtest)
+set(listlib listlib)
 
 set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "Configs" FORCE) #Создается переменная CMAKE_CONFIGURATION_TYPES со значением "Debug;Release" и меткой/разделом Configs, переменная сохраниется в специальном файле доступном из всех файлов,
 if(NOT CMAKE_BUILD_TYPE) # проверка имеющихся у компилятора вариантов сборки
@@ -25,6 +29,8 @@ add_subdirectory(gtest)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/stacklib)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/queuelib)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/polinomlib)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/listlib)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/postfixlib) #Добавляем директорию "${CMAKE_CURRENT_SOURCE_DIR}/vectorlib" в дополняемые каталоги включаемых файлов
 #${CMAKE_CURRENT_SOURCE_DIR} - стандартная переменная с адресом рабочей директории
 add_subdirectory(stack) #Добавляем директорию с под-CMakeList-ом, и выполняем под-CMakeList
@@ -38,6 +44,10 @@ add_subdirectory(postfixlib)
 add_subdirectory(postfixtest)
 add_subdirectory(Calc_by_postfix)
 add_subdirectory(WindowForQueue)
+add_subdirectory(polinom)
+add_subdirectory(polinomlib)
+add_subdirectory(polinomtest)
+add_subdirectory(listlib)
 
 #file(GLOB hdrs "*.h*") #Добавляем в переменную hdrs все файлы с расширением .h
 #file(GLOB srcs "*.cpp") #Добавляем в переменную srcs все файлы с расширением .cpp
